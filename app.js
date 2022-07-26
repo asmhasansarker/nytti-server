@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const fileUpload = require("express-fileUpload")
+// const fileUpload = require("express-fileUpload")
 require("./config/db");
 
 const userRouter = require("./routes/user.route");
