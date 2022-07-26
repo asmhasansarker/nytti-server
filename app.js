@@ -12,7 +12,7 @@ const app = express();
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(fileUpload())
+// app.use(fileUpload())
 app.use("/api/users", userRouter);
 app.use("/api/students", studentRouter);
 app.use("/api/teachers", teacherRouter);
@@ -23,10 +23,6 @@ app.use("/api/teachers", teacherRouter);
 // api/users/:id : PATCH
 // api/users/:id : DELETE
 
-// app.post("/students",(req, res) => {
-//   console.log("newStudent :", req.body)
-//   res.status(200).send("new student route", req.body)
-// })
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/./views/index.html");
