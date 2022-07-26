@@ -50,7 +50,7 @@ const studentSchema = mongoose.Schema({
     require: true,
   },
   phone: {
-    type: Number,
+    type: String,
     require: true,
   },
   email: {
@@ -58,7 +58,7 @@ const studentSchema = mongoose.Schema({
     require: true,
   },
   guardiansPhone: {
-    type: Number,
+    type: String,
     require: true,
   },
   relationshipWithGuardian: {
