@@ -6,6 +6,7 @@ require("./config/db");
 const userRouter = require("./routes/user.route");
 const studentRouter = require("./routes/student.route")
 const teacherRouter = require("./routes/teacher.route")
+const courseRouter = require("./routes/course.route")
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use(express.json());
 app.use("/api/users", userRouter);
 app.use("/api/students", studentRouter);
 app.use("/api/teachers", teacherRouter);
+app.use("/api/courses", courseRouter);
 
 // api/users : GET
 // api/users/:id : GET

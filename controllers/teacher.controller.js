@@ -48,7 +48,7 @@ const updateTeacher = async (req, res) => {
 
 const deleteTeacher = async (req, res) => {
   try {
-    await Teacher.deleteOne({ id: req.params.id });
+    await Teacher.deleteOne({ _id: req.params.id });
     res.status(200).json({ message: "teacher is deleted" });
   } catch (error) {
     res.status(500).send(error.message);
