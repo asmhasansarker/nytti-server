@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 
 const studentSchema = mongoose.Schema({
+  id: {
+    type: String,
+    require: true,
+  },
   name: {
     type: String,
     require: true,
@@ -99,64 +103,56 @@ const studentSchema = mongoose.Schema({
   },
   graduationUniversity: {
     type: String,
-    
   },
   graduationBoard: {
     type: String,
-    
   },
   graduationYear: {
     type: String,
-    
   },
   graduationGpa: {
     type: String,
-    
   },
   postGraduationUniversity: {
     type: String,
-    
   },
   postGraduationBoard: {
     type: String,
-    
   },
   postGraduationYear: {
     type: String,
-    
   },
   postGraduationGpa: {
     type: String,
-    
   },
   referenceName: {
     type: String,
-    
   },
   referencePhone: {
     type: String,
-    
   },
   referenceBatch: {
     type: String,
-    
   },
   referenceRoll: {
     type: String,
-    
   },
   relationWithReference: {
     type: String,
-    
   },
-  // sscBoard: {
-  //   type: String,
-  //   require: true,
-  // },
-  // age: {
-  //   type: Number,
-  //   require: true,
-  // },
+  nameOfCourse: {
+    type: String,
+  },
+  duration: {
+    type: String,
+  },
+  result: {
+    type: String,
+  },
+  passingYear: {
+    type: Number,
+  },
+
   createdOn: {
     type: Date,
     default: Date.now,
