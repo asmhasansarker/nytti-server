@@ -34,7 +34,7 @@ const createStudent = async (req, res) => {
   console.log(StudentInfo);
   try {
     const newStudent = new Student({
-      id: shortid.generate(),
+      // id: shortid.generate(),
       ...StudentInfo,
     });
     await newStudent.save();
