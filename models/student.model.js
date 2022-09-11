@@ -11,7 +11,7 @@ const studentSchema = mongoose.Schema({
   },
   photo: {
     type: String,
-    require: true,
+    require: true, 
   },
   fatherName: {
     type: String,
@@ -71,35 +71,35 @@ const studentSchema = mongoose.Schema({
   },
   sscSchool: {
     type: String,
-    require: true,
+    
   },
   sscBoard: {
     type: String,
-    require: true,
+    
   },
   sscYear: {
     type: Number,
-    require: true,
+    
   },
   sscGpa: {
     type: Number,
-    require: true,
+    
   },
   hscSchool: {
     type: String,
-    require: true,
+    
   },
   hscBoard: {
     type: String,
-    require: true,
+    
   },
   hscYear: {
     type: Number,
-    require: true,
+    
   },
   hscGpa: {
     type: Number,
-    require: true,
+    
   },
   graduationUniversity: {
     type: String,
